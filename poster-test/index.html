@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200, height=900">
+  <title>Shape Onboarding · The Journey — Poster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 1200px;
+      height: 900px;
+      font-family: "Outfit", system-ui, sans-serif;
+      background: #1a1a2e;
+      color: #e8e8e8;
+      overflow: hidden;
+      position: relative;
+    }
+    .poster {
+      width: 1200px;
+      height: 900px;
+      padding: 24px 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin: 0 0 4px;
+      color: #c4b5fd;
+    }
+    .subtitle {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+    .river-wrap {
+      position: relative;
+      width: 320px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      min-height: 0;
+      justify-content: center;
+    }
+    /* Zigzag wire (river path) – behind the strip so the bend is visible */
+    .wire {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .wire path {
+      fill: none;
+      stroke: rgba(167, 139, 250, 0.55);
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2px;
+      margin-bottom: 4px;
+      justify-content: center;
+    }
+    .row--left { align-self: flex-start; }
+    .row--right { flex-direction: row-reverse; align-self: flex-end; }
+    .cell {
+      flex-shrink: 0;
+      width: 16px;
+      height: 35px;
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+    .cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    footer {
+      font-size: 0.7rem;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <h1>Shape Onboarding · The Journey</h1>
+    <p class="subtitle">Onboarding → Checkout → Download</p>
+    <div class="river-wrap">
+      <svg class="wire" viewBox="0 0 320 720" preserveAspectRatio="none">
+        <path id="river-path" d="M 28 20 L 292 20 L 292 58 L 28 58 L 28 96 L 292 96 L 292 134 L 28 134 L 28 172 L 292 172 L 292 210 L 28 210 L 28 248 L 292 248 L 292 286 L 28 286 L 28 324 L 292 324 L 292 362 L 28 362 L 28 400 L 292 400 L 292 438 L 28 438 L 28 476 L 292 476 L 292 514 L 28 514 L 28 552 L 292 552 L 292 590 L 28 590 L 28 628 L 292 628 L 292 666 L 28 666 L 28 704 L 292 704"/>
+      </svg>
+      <div class="river">
+        <div class="row row--left"><div class="cell"><img src="thumbs/frame_0000.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0003.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0005.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0011.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0016.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0020.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0021.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0030.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0033.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0037.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0039.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0042.jpg" alt=""></div></div>
+        <div class="row row--right"><div class="cell"><img src="thumbs/frame_0052.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0056.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0058.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0060.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0066.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0072.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0075.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0080.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0083.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0084.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0113.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0123.jpg" alt=""></div></div>
+        <div class="row row--left"><div class="cell"><img src="thumbs/frame_0127.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0135.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0142.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0144.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0157.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0162.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0165.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0175.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0194.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0211.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0213.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0216.jpg" alt=""></div></div>
+        <div class="row row--right"><div class="cell"><img src="thumbs/frame_0218.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0221.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0225.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0227.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0230.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0235.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0239.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0242.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0245.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0249.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0251.jpg" alt=""></div></div>
+        <div class="row row--left"><div class="cell"><img src="thumbs/frame_0255.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0263.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0266.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0268.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0270.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0273.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0275.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0277.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0292.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0293.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0300.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0309.jpg" alt=""></div></div>
+        <div class="row row--right"><div class="cell"><img src="thumbs/frame_0311.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0318.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0326.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0327.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0331.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0334.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0336.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0338.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0340.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0343.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0346.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0347.jpg" alt=""></div></div>
+        <div class="row row--left"><div class="cell"><img src="thumbs/frame_0349.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0350.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0352.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0362.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0366.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0373.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0378.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0383.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0397.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0399.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0400.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0401.jpg" alt=""></div></div>
+        <div class="row row--right"><div class="cell"><img src="thumbs/frame_0406.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0408.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0413.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0414.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0417.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0428.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0430.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0432.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0439.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0472.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0485.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0487.jpg" alt=""></div></div>
+        <div class="row row--left"><div class="cell"><img src="thumbs/frame_0488.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0492.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0504.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0505.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0508.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0511.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0518.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0520.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0522.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0524.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0527.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0545.jpg" alt=""></div></div>
+        <div class="row row--right"><div class="cell"><img src="thumbs/frame_0546.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0548.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0549.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0550.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0552.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0564.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0566.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0568.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0570.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0571.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0581.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0584.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0588.jpg" alt=""></div></div>
+        <div class="row row--left"><div class="cell"><img src="thumbs/frame_0595.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0597.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0610.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0620.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0622.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0623.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0625.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0627.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0628.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0629.jpg" alt=""></div><div class="cell"><img src="thumbs/frame_0630.jpg" alt=""></div></div>
+      </div>
+    </div>
+    <footer>Created by Jan Lindemans</footer>
+  </div>
+</body>
+</html>
